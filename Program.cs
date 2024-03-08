@@ -20,6 +20,7 @@ internal static class Program
 
         try
         {
+            token = System.IO.File.ReadAllText(fileName);
             bot = new Host(token);
         }
         catch (Exception e)
